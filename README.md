@@ -47,3 +47,5 @@ http://typeorm.io/#/
 ## password 암호화
 `yarn add bcrypt`
 `yarn add @types/bcrypt`
+
+## Entities
