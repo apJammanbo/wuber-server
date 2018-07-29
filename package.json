@@ -1,0 +1,12 @@
+{
+  "name": "wuber-server",
+  "version": "1.0.0",
+  "description": "wuber-server with graphql",
+  "main": "index.js",
+  "repository": "https://apJammanbo@github.com/apJammanbo/wuber-server.git",
+  "author": "apJammanbo <apJammanbo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql"
+  }
+}
