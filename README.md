@@ -28,5 +28,9 @@ hellmet -> 보안관련 검사
 
 `yarn add @types/helmet @types/morgan @types/cors --dev`
 
-## GrapqhQL LIB
+## GraphQL LIB
 `yarn add graphql-tools merge-graphql-schemas`
+
+## GraphQL to typescript
+`yarn add graphql-to-typescript gql-merge --dev`
+`yarn add babel-runtime --dev`
