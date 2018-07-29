@@ -34,3 +34,16 @@ hellmet -> 보안관련 검사
 ## GraphQL to typescript
 `yarn add graphql-to-typescript gql-merge --dev`
 `yarn add babel-runtime --dev`
+
+## TYPE ORM
+http://typeorm.io/#/
+
+## POSTGRES 
+`yarn add pg`
+`yarn add dotenv`
+
+`yarn add class-validator`
+
+## password 암호화
+`yarn add bcrypt`
+`yarn add @types/bcrypt`
