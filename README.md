@@ -48,4 +48,20 @@ http://typeorm.io/#/
 `yarn add bcrypt`
 `yarn add @types/bcrypt`
 
-## Entities
+
+## Features
+
+- [ ] Sign In / Sign Up with Facebook
+- [ ] Sign with E-mail
+- [ ] Start Phone Number Verification
+- [ ] Complete Phone Number Verification
+- [ ] Sign Up with E-mail
+- [ ] Get My Profile
+- [ ] Update My Profile
+- [ ] Toggle Drive Mode
+- [ ] Report location / Orientation
+- [ ] Add Place
+- [ ] Delete Place
+- [ ] Edit Place
+- [ ] See Nearby Drivers
+- [ ] Subscribe to Nearby Drivers
