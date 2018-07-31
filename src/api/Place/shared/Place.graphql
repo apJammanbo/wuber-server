@@ -10,5 +10,5 @@ type Place {
 }
 
 type Query {
-	place: place
+	place: Place
 }
