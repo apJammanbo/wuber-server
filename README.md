@@ -49,13 +49,20 @@ http://typeorm.io/#/
 `yarn add @types/bcrypt`
 
 
-## Features
+## Resovers
+
+### Public Resovers :
 
 - [ ] Sign In / Sign Up with Facebook
 - [ ] Sign with E-mail
 - [ ] Start Phone Number Verification
 - [ ] Complete Phone Number Verification
 - [ ] Sign Up with E-mail
+---
+
+### Private Resovers :
+
+- [ ] Verify Email
 - [ ] Get My Profile
 - [ ] Update My Profile
 - [ ] Toggle Drive Mode
@@ -65,3 +72,16 @@ http://typeorm.io/#/
 - [ ] Edit Place
 - [ ] See Nearby Drivers
 - [ ] Subscribe to Nearby Drivers
+- [ ] Request a Ride
+- [ ] Get NearBy Rides
+- [ ] Subscribe to Nearby Ride Requests
+- [ ] Subscribe to Ride Status
+- [ ] Get Chat Room Messagss
+- [ ] Subscribe to Chat Romm Message
+- [ ] Send a Chat Message
+
+## Code Challange
+
+- [ ] Get Ride History
+- [ ] Get Ride Detail
+
