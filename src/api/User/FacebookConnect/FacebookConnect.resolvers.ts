@@ -14,7 +14,6 @@ const resolvers: Resolvers = {
 						error: null,
 						token: 'Comming Soon'
 					};
-				} else {
 				}
 			} catch (error) {
 				return {

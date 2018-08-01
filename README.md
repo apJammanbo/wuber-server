@@ -53,9 +53,9 @@ http://typeorm.io/#/
 
 ### Public Resovers :
 
-- [ ] Sign In / Sign Up with Facebook
-- [ ] Sign with E-mail
-- [ ] Start Phone Number Verification
+- [X] Sign In / Sign Up with Facebook
+- [X] Sign with E-mail
+- [X] ] Start Phone Number Verification
 - [ ] Complete Phone Number Verification
 - [ ] Sign Up with E-mail
 ---
