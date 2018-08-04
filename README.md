@@ -48,7 +48,14 @@ http://typeorm.io/#/
 `yarn add bcrypt`
 `yarn add @types/bcrypt`
 
+## Jsonwebtoken
+`yarn add jsonwebtoken`
+`yarn add @types/jsonwebtoken --dev`
 
+## MailGun
+https://app.mailgun.com/app/dashboard
+`yarn add mailgun-js`
+`yarn add @typesmailgun-js --dev`
 ## Resovers
 
 ### Public Resovers :
@@ -56,14 +63,18 @@ http://typeorm.io/#/
 - [X] Sign In / Sign Up with Facebook
 - [X] Sign with E-mail
 - [X] ] Start Phone Number Verification
-- [ ] Complete Phone Number Verification
-- [ ] Sign Up with E-mail
+- [X]Complete Phone Number Verification
+- [X] Sign Up with E-mail
 ---
+### Authentication :
+- [X] Generate JWT
+- [X] Verify JWT
 
 ### Private Resovers :
 
+- [X] Get My Profile
+- [ ] Request Email Verification
 - [ ] Verify Email
-- [ ] Get My Profile
 - [ ] Update My Profile
 - [ ] Toggle Drive Mode
 - [ ] Report location / Orientation

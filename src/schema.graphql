@@ -11,6 +11,7 @@ type Query {
   message: Message
   place: Place
   ride: Ride
+  GetMyProfile: GetMyProfileResponse!
   user: User
 }
 
@@ -61,6 +62,7 @@ type CompletePhoneVerificationResponse {
 type Mutation {
   CompletePhoneVerification(phoneNumber: String!, key: String!): CompletePhoneVerificationResponse!
   EmailSignIn(email: String!, password: String!): EmailSignInResponse!
+  EmailSignUp(firstName: String!, lastName: String!, email: String!, password: String!, profilePhoto: String!, age: Int!, phoneNumber: String!): EmailSignUpResponse!
   FacebookConnect(firstName: String!, lastName: String!, email: String, fbId: String!): FacebookResponse!
   StartPhoneVerification(phoneNumber: String!): StartPhoneVerificationResponse!
 }
@@ -71,10 +73,22 @@ type EmailSignInResponse {
   token: String
 }
 
+type EmailSignUpResponse {
+  ok: Boolean!
+  error: String
+  token: String
+}
+
 type FacebookResponse {
   ok: Boolean!
   error: String
   token: String
+}
+
+type GetMyProfileResponse {
+  ok: Boolean!
+  error: String
+  user: User
 }
 
 type User {
