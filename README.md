@@ -73,7 +73,8 @@ https://app.mailgun.com/app/dashboard
 ### Private Resovers :
 
 - [X] Get My Profile
-- [ ] Request Email Verification
+- [X] Request Email Verification
+- [X] Complete Email Verification
 - [ ] Verify Email
 - [ ] Update My Profile
 - [ ] Toggle Drive Mode
