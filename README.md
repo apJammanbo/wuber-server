@@ -75,8 +75,7 @@ https://app.mailgun.com/app/dashboard
 - [X] Get My Profile
 - [X] Request Email Verification
 - [X] Complete Email Verification
-- [ ] Verify Email
-- [ ] Update My Profile
+- [X] Update My Profile
 - [ ] Toggle Drive Mode
 - [ ] Report location / Orientation
 - [ ] Add Place
