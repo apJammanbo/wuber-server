@@ -76,11 +76,12 @@ https://app.mailgun.com/app/dashboard
 - [X] Request Email Verification
 - [X] Complete Email Verification
 - [X] Update My Profile
-- [ ] Toggle Drive Mode
-- [ ] Report location / Orientation
-- [ ] Add Place
-- [ ] Delete Place
-- [ ] Edit Place
+- [X] Toggle Drive Mode
+- [X] Report location / Orientation
+- [X] Add Place
+- [X] Edit Place
+- [X] Delete Place
+- [X] Get My Places
 - [ ] See Nearby Drivers
 - [ ] Subscribe to Nearby Drivers
 - [ ] Request a Ride
