@@ -1,21 +1,34 @@
-import { Entity, Column, BaseEntity, PrimaryGeneratedColumn, CreateDateColumn, ManyToOne } from 'typeorm';
-import Chat from './Chat';
-import User from './User';
+import {
+  Entity,
+  Column,
+  BaseEntity,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  ManyToOne
+} from "typeorm";
+import Chat from "./Chat";
+import User from "./User";
 
 @Entity()
 class Message extends BaseEntity {
-	@PrimaryGeneratedColumn() id: number;
+  @PrimaryGeneratedColumn()
+  id: number;
 
-	@Column({ type: 'text' })
-	text: string;
+  @Column({ type: "text" })
+  text: string;
 
-	@ManyToOne((type) => Chat, (chat) => chat.messages)
-	chat: Chat;
+  @Column({ nullable: true })
+  chatId: number;
 
-	@ManyToOne((type) => User, (user) => user.messages)
-	user: User;
+  @ManyToOne(type => Chat, chat => chat.messages)
+  chat: Chat;
 
-	@CreateDateColumn() createdAt: string;
-	@CreateDateColumn() updatedAt: string;
+  @ManyToOne(type => User, user => user.messages)
+  user: User;
+
+  @CreateDateColumn()
+  createdAt: string;
+  @CreateDateColumn()
+  updatedAt: string;
 }
 export default Message;

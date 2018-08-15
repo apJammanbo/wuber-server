@@ -101,8 +101,9 @@ hellmet -> 보안관련 검사
 - [x] Subscribe to Nearby Ride Requests
 - [x] Update Ride Status
 - [x] Get Ride
-- [ ] Subscribe to Ride Status
-- [ ] Get Chat Room Messagss
+- [x] Subscribe to Ride Status
+- [x] Create Chat Room
+- [x] Get Chat Room Messagss
 - [ ] Subscribe to Chat Romm Message
 - [ ] Send a Chat Message
 
