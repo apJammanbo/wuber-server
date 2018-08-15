@@ -27,6 +27,7 @@ const appOptions: Options = {
 					};
 				}
 			}
+			
 			throw new Error("NO JWT! Can't subscription");
 		}
 	}

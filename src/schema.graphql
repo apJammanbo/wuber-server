@@ -11,6 +11,7 @@ type Query {
   message: Message
   GetMyPlaces: GetMyPlacesResponse!
   place: Place
+  GetNearByRides: GetNearByRidesResponse!
   ride: Ride
   GetMyProfile: GetMyProfileResponse!
   GetNearByDrivers: GetNearByDriversRespons!
@@ -35,6 +36,7 @@ type Mutation {
   AddPlace(name: String!, lng: Float!, lat: Float!, adress: String!, isFav: Boolean!): AddPlaceResponse!
   DeletePlace(placeId: Int!): DeletePlaceResponse!
   EditPlace(placeId: Int!, name: String, isFav: Boolean): EditPlaceResponse!
+  RequestRide(pickUpAddress: String!, pickUpLat: Float!, pickUpLng: Float!, dropOffAddress: String!, dropOffLat: Float!, dropOffLng: Float!, price: Float!, distance: String!, duration: String!): RequestRideResponse!
   CompleteEmailVerification(key: String!): CompleteEmailVerificationResponse!
   CompletePhoneVerification(phoneNumber: String!, key: String!): CompletePhoneVerificationResponse!
   EmailSignIn(email: String!, password: String!): EmailSignInResponse!
@@ -74,6 +76,18 @@ type Place {
   user: User!
   createdAt: String!
   updatedAt: String
+}
+
+type GetNearByRidesResponse {
+  ok: Boolean!
+  error: String
+  rides: [Ride]
+}
+
+type RequestRideResponse {
+  ok: Boolean!
+  error: String
+  ride: Ride
 }
 
 type Ride {

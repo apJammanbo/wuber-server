@@ -8,9 +8,9 @@ Wuber Server
 
 tslint, tsconfig
 
-#### DefinitelyTyped
+### DefinitelyTyped
 
-https://github.com/DefinitelyTyped/DefinitelyTyped
+<https://github.com/DefinitelyTyped/DefinitelyTyped>
 
 `yarn add @types/node --dev`
 
@@ -29,62 +29,74 @@ hellmet -> 보안관련 검사
 `yarn add @types/helmet @types/morgan @types/cors --dev`
 
 ## GraphQL LIB
+
 `yarn add graphql-tools merge-graphql-schemas`
 
 ## GraphQL to typescript
+
 `yarn add graphql-to-typescript gql-merge --dev`
 `yarn add babel-runtime --dev`
 
 ## TYPE ORM
-http://typeorm.io/#/
 
-## POSTGRES 
+<http://typeorm.io/#/>
+
+## POSTGRES
+
 `yarn add pg`
 `yarn add dotenv`
 
 `yarn add class-validator`
 
 ## password 암호화
+
 `yarn add bcrypt`
 `yarn add @types/bcrypt`
 
 ## Jsonwebtoken
+
 `yarn add jsonwebtoken`
 `yarn add @types/jsonwebtoken --dev`
 
 ## MailGun
-https://app.mailgun.com/app/dashboard
+
+<https://app.mailgun.com/app/dashboard>
 `yarn add mailgun-js`
 `yarn add @typesmailgun-js --dev`
+
 ## Resovers
 
-### Public Resovers :
+### Public Resovers
 
-- [X] Sign In / Sign Up with Facebook
-- [X] Sign with E-mail
-- [X] ] Start Phone Number Verification
+- [x] Sign In / Sign Up with Facebook
+- [x] Sign with E-mail
+- [x] ] Start Phone Number Verification
 - [X]Complete Phone Number Verification
-- [X] Sign Up with E-mail
+- [x] Sign Up with E-mail
+
 ---
-### Authentication :
-- [X] Generate JWT
-- [X] Verify JWT
 
-### Private Resovers :
+### Authentication
 
-- [X] Get My Profile
-- [X] Request Email Verification
-- [X] Complete Email Verification
-- [X] Update My Profile
-- [X] Toggle Drive Mode
-- [X] Report location / Orientation
-- [X] Add Place
-- [X] Edit Place
-- [X] Delete Place
-- [X] Get My Places
-- [ ] See Nearby Drivers
-- [ ] Subscribe to Nearby Drivers
-- [ ] Request a Ride
+- [x] Generate JWT
+- [x] Verify JWT
+
+### Private Resovers
+
+- [x] Get My Profile
+- [x] Request Email Verification
+- [x] Complete Email Verification
+- [x] Update My Profile
+- [x] Toggle Drive Mode
+- [x] Report location / Orientation
+- [x] Add Place
+- [x] Edit Place
+- [x] Delete Place
+- [x] Get My Places
+- [x] See Nearby Drivers
+- [x] Subscribe to Nearby Drivers
+- [x] Request a Ride
+- [ ] Get NearBy Ride Requests
 - [ ] Get NearBy Rides
 - [ ] Subscribe to Nearby Ride Requests
 - [ ] Subscribe to Ride Status
@@ -96,4 +108,3 @@ https://app.mailgun.com/app/dashboard
 
 - [ ] Get Ride History
 - [ ] Get Ride Detail
-
