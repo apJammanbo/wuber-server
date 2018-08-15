@@ -13,20 +13,31 @@ const resolvers: Resolvers = {
       async (
         _,
         args: RequestRideMutationArgs,
-        { req }
+        { req, pubSub }
       ): Promise<RequestRideResponse> => {
         const user: User = req.user;
-        try {
-          const ride = await Ride.create({ ...args, passenger: user }).save();
-          return {
-            ok: true,
-            error: null,
-            ride: ride
-          };
-        } catch (error) {
+        if (!user.isRiding) {
+          try {
+            const ride = await Ride.create({ ...args, passenger: user }).save();
+            pubSub.publish("rideRequest", { NearByRideSubscription: ride });
+            user.isRiding = true;
+            user.save();
+            return {
+              ok: true,
+              error: null,
+              ride: ride
+            };
+          } catch (error) {
+            return {
+              ok: false,
+              error: null,
+              ride: null
+            };
+          }
+        } else {
           return {
             ok: false,
-            error: null,
+            error: "You can't request two rides",
             ride: null
           };
         }

@@ -1,40 +1,48 @@
 import { Resolvers } from "../../../types/resolver";
 import privateResolver from "../../../utils/privateResolver";
-import { GetNearByRidesResponse } from "../../../types/graph";
 import User from "../../../entities/User";
 import { getRepository, Between } from "../../../../node_modules/typeorm";
 import Ride from "../../../entities/Ride";
+import { GetNearByRideResponse } from "../../../types/graph";
 
 const resolvers: Resolvers = {
   Query: {
-    GetNearByRides: privateResolver(
-      async (_, __, { req }): Promise<GetNearByRidesResponse> => {
+    GetNearByRide: privateResolver(
+      async (_, __, { req }): Promise<GetNearByRideResponse> => {
         const user: User = req.user;
         if (user.isDriving) {
           const { lastLat, lastLng } = user;
           try {
-            const rides = await getRepository(Ride).find({
-              status: "REQUESTIG",
+            const ride = await getRepository(Ride).findOne({
+              status: "REQUESTING",
               pickUpLat: Between(lastLat - 0.05, lastLat + 0.05),
               pickUpLng: Between(lastLng - 0.05, lastLng + 0.05)
             });
-            return {
-              ok: true,
-              error: null,
-              rides: rides
-            };
+            if (ride) {
+              return {
+                ok: true,
+                error: null,
+                ride
+              };
+            } else {
+              return {
+                ok: true,
+                error: null,
+                ride: null
+              };
+            }
           } catch (error) {
             return {
               ok: false,
               error: error.message,
-              rides: null
+              ride: null
             };
           }
         } else {
           return {
             ok: false,
             error: "You are not driver",
-            rides: null
+            ride: null
           };
         }
       }

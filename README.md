@@ -96,9 +96,11 @@ hellmet -> 보안관련 검사
 - [x] See Nearby Drivers
 - [x] Subscribe to Nearby Drivers
 - [x] Request a Ride
-- [ ] Get NearBy Ride Requests
-- [ ] Get NearBy Rides
-- [ ] Subscribe to Nearby Ride Requests
+- [x] Get NearBy Ride Requests
+- [x] Get NearBy Rides
+- [x] Subscribe to Nearby Ride Requests
+- [x] Update Ride Status
+- [x] Get Ride
 - [ ] Subscribe to Ride Status
 - [ ] Get Chat Room Messagss
 - [ ] Subscribe to Chat Romm Message
